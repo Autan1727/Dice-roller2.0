@@ -1,3 +1,8 @@
+body{
+  background-image: url('wallpaperbetter.jpg')
+}
+
+
 #container{
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -24,7 +29,8 @@ button:active{
   width: 150px;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 20px;
+
+
 }
 #diceImages img{
   margin-left: 5px;
@@ -33,10 +39,13 @@ button:active{
 
 }
 .rules{
+  color: rgb(203, 255, 242);
   font-weight: 500;
   margin-bottom: 0;
   margin-top: 0;
-  font-size: 23px;
+  margin-left: 1200px;
+  font-size: 30px;
+  
 }
 .score{
   font-size:22px;
@@ -44,11 +53,12 @@ button:active{
 .puanbasi{
   font-size: 22px;
   margin-left: 60px;
+  color: aliceblue;
 }
 .yeniden{
   border: none;
   outline: none;
-  background-color: white;
+  background-color: transparent;
   font-size: 0;
   width: 0;
   height: 0;
@@ -78,4 +88,10 @@ button:active{
   margin-left: 20px;
   margin-bottom: 20px;
   vertical-align: top;
+}
+h1{
+  color: rgba(240, 248, 255, 0.76);
+}
+.label1 {
+  color: rgba(240, 248, 255, 0.76);
 }
