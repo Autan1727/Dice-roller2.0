@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zar Atma Oyunu</title>
+    <link rel="stylesheet" href="dice-roller.css">
+  </head>
+  <body>
+    
+    <div id="container">
+      
+      <h1>Zar atmaca!</h1>
+      <label class="puanbasi">Puan: <label class="score">5</label></label><button class="yeniden" onclick="
+      location.reload();
+      ">Yeniden başlat</button><br>
+      <label>zar sayısı: </label>
+      <input type="number" value="2" min="1" id="numOfDice">
+      <button onclick="rollDice();">Zar at!</button>
+      <div id="diceResult"></div>
+      <div id="diceImages"></div>
+      <p class="rules">Kurallar:</p>
+      <p class="rules">Puanınız 20 olursa kazanırsınız</p>
+      <p class="rules">Oyunu oynamak için iki tane zar çevirin.</p>
+      <p class="rules"> İki tane zarı da aynı getirmeyi başarırsanız 3 puan,</p>
+      <p class="rules"> iki tane tek veya çift getirirseniz 2 puan alacaksınız.</p>
+      <p class="rules">Fakat bir tek ve bir çift alırsanız 3 puan kaybedeceksiniz.</p>
+      <p class="rules">Başlangıç puanınız 5'tir.</p>
+    </div>
+    
+    <script src="dice-roller.js"></script>
+  </body>
+</html>
