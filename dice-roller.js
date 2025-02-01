@@ -36,7 +36,7 @@ function rollDice() {
                 if (values[0] == values[1] && values[0] % 2 == 0 && values[1] % 2 == 0) {
                     setTimeout (function (){
                         alert('hem eşit hem çift yaptığınız için 10 puan kazandınız!')
-                    },200)
+                    },450)
                     
                     
                     score += 10;
@@ -50,14 +50,14 @@ function rollDice() {
                 } else if (values[0] == values[1]) {
                     setTimeout (function (){
                         alert('iki zar da eşit! 3 puan kazandınız!')
-                    },200)
+                    },450)
                     
                     
                     score += 3;
                     if(score >= 20) {
                         setTimeout (function (){
                             alert('KAZANDINIZ!')
-                        },300)
+                        },450)
 
                         scoreResult.textContent = 'kazandınız'
                         atmaButton.classList.add('yeniden-2')
@@ -67,13 +67,13 @@ function rollDice() {
                 } else if (values[0] % 2 == 0 && values[1] % 2 == 0) {
                     setTimeout (function (){
                         alert('iki zar da çift! 3 puan kazandınız!')
-                    },200)
+                    },450)
                     score += 3;
                     if(score >= 20) {
                         scoreResult.textContent = 'kazandınız'
                         setTimeout (function (){
                             alert('KAZANDINIZ!')
-                        },300)
+                        },450)
                         atmaButton.classList.add('yeniden-2')
                         atmaButton.textContent = 'Yeniden başlat'
                         oyunbittimi = true;
@@ -81,7 +81,7 @@ function rollDice() {
                 } else if (values[0] % 2 != 0 && values[1] % 2 != 0) {
                     setTimeout (function (){
                         alert('iki zar da tek! 2 puan kazandınız!')
-                    },200)
+                    },450)
                     
                     score += 2;
                     if(score >= 20) {
@@ -95,7 +95,7 @@ function rollDice() {
                 else if (values[0] % 2 == 0 && values[1] % 2 != 0) {
                     setTimeout (function (){
                         alert('bir zar tek, bir zar çift 3 puan kaybettiniz :(')
-                    },200)
+                    },450)
                     score -= 3;
                     if (score < 0 || score == 0) {
                         scoreResult.textContent = 'Oynayacak puanınız kalmadı!'
@@ -109,7 +109,7 @@ function rollDice() {
                 else if (values[0] % 2 != 0 && values[1] % 2 == 0) {
                     setTimeout (function (){
                         alert('bir zar tek, bir zar çift 3 puan kaybettiniz :(')
-                    },200)
+                    },450)
                     score -= 3;
                     if (score < 0 || score == 0) {
                         console.log('you dont have enough score to play!');
