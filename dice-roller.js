@@ -36,7 +36,7 @@ function rollDice() {
                 if (values[0] == values[1] && values[0] % 2 == 0 && values[1] % 2 == 0) {
                     setTimeout (function (){
                         alert('hem eşit hem çift yaptığınız için 10 puan kazandınız!')
-                    },100)
+                    },200)
                     
                     
                     score += 10;
@@ -50,7 +50,7 @@ function rollDice() {
                 } else if (values[0] == values[1]) {
                     setTimeout (function (){
                         alert('iki zar da eşit! 3 puan kazandınız!')
-                    },100)
+                    },200)
                     
                     
                     score += 3;
@@ -64,7 +64,7 @@ function rollDice() {
                 } else if (values[0] % 2 == 0 && values[1] % 2 == 0) {
                     setTimeout (function (){
                         alert('iki zar da çift! 2 puan kazandınız!')
-                    },100)
+                    },200)
                     score += 2;
                     if(score >= 20) {
                         scoreResult.textContent = 'kazandınız'
@@ -76,7 +76,7 @@ function rollDice() {
                 } else if (values[0] % 2 != 0 && values[1] % 2 != 0) {
                     setTimeout (function (){
                         alert('iki zar da tek! 2 puan kazandınız!')
-                    },100)
+                    },200)
                     
                     score += 2;
                     if(score >= 20) {
@@ -90,7 +90,7 @@ function rollDice() {
                 else if (values[0] % 2 == 0 && values[1] % 2 != 0) {
                     setTimeout (function (){
                         alert('bir zar tek, bir zar çift 3 puan kaybettiniz :(')
-                    },100)
+                    },200)
                     score -= 3;
                     if (score < 0 || score == 0) {
                         scoreResult.textContent = 'Oynayacak puanınız kalmadı!'
@@ -104,7 +104,7 @@ function rollDice() {
                 else if (values[0] % 2 != 0 && values[1] % 2 == 0) {
                     setTimeout (function (){
                         alert('bir zar tek, bir zar çift 3 puan kaybettiniz :(')
-                    },100)
+                    },200)
                     score -= 3;
                     if (score < 0 || score == 0) {
                         console.log('you dont have enough score to play!');
