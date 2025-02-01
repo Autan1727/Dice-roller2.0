@@ -19,7 +19,6 @@ function rollDice() {
           yenidenButton.classList.add('yeniden-2')
         }
          else if (score <= 0) {
-            console.log('you dont have enough score to play!');
             scoreResult.textContent = 'Oynayacak puanınız kalmadı!'
             yenidenButton.classList.add('yeniden-2')
         } 
@@ -35,29 +34,22 @@ function rollDice() {
             diceImages.innerHTML = images.join('');
 
             if (values[0] == values[1] && values[0] % 2 == 0 && values[1] % 2 == 0) {
-                console.log('double double double');
                 score += 10;
             } else if (values[0] == values[1]) {
-                console.log('same');
                 score += 3;
             } else if (values[0] % 2 == 0 && values[1] % 2 == 0) {
-                console.log('double double');
                 score += 2;
             } else if (values[0] % 2 != 0 && values[1] % 2 != 0) {
-                console.log('tek tek');
                 score += 2;
             }
             if (values[0] % 2 == 0 && values[1] % 2 != 0) {
-                console.log('lose!');
                 score -= 3;
                 if (score <= 0) {
-                    console.log('you dont have enough score to play!');
                     scoreResult.textContent = 'Oynayacak puanınız kalmadı!'
                     yenidenButton.classList.add('yeniden-2')
                 } 
             }
             if (values[0] % 2 != 0 && values[1] % 2 == 0) {
-                console.log('lose!');
                 score -= 3;
                 if (score <= 0) {
                     console.log('you dont have enough score to play!');
