@@ -64,7 +64,7 @@ function rollDice() {
             values.push(value);
             images.push(`<img src="DR-images/${value}.png">`);
         }
-        diceResult.textContent = `dice: ${values.join(', ')}`;
+        diceResult.textContent = `sonuç: ${values.join(', ')}`;
         diceImages.innerHTML = images.join('');
     }
 }
